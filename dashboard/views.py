@@ -30,7 +30,7 @@ def home(request):
 def staff(request):
     workers = User.objects.all()
     context = {
-        'workers': workers
+        'workers': workers,
     }
     return render(request, "dashboard/staff.html", context)
 
