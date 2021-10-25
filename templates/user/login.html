@@ -23,6 +23,7 @@
                         {% csrf_token %}
                         {{form | crispy}}
                         <input type="submit" value="Submit" class="btn btn-success">
+                        <a class="mx-4" href="{% url 'password_reset' %}">Forgot Password?</a>
                     </form>
                 </div>
             </div>
